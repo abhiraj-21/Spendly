@@ -6,7 +6,7 @@ import io.github.abhiraj.spendly.entity.ProfileEntity;
 import lombok.Data;
 
 @Data
-public class ProfileDto {
+public class ProfileDTO {
 
 	private Long id;
 	private String fullName;
@@ -16,9 +16,9 @@ public class ProfileDto {
 	private LocalDateTime createdAt;
 	private LocalDateTime updatedAt;
 	
-	public ProfileDto() {}
+	public ProfileDTO() {}
 
-	public ProfileDto(Long id, String fullName, String email, String password, String profileImageUrl,
+	public ProfileDTO(Long id, String fullName, String email, String password, String profileImageUrl,
 			LocalDateTime createdAt, LocalDateTime updatedAt) {
 		super();
 		this.id = id;
@@ -30,7 +30,7 @@ public class ProfileDto {
 		this.updatedAt = updatedAt;
 	}
 
-	public ProfileDto(ProfileEntity profile) {
+	public ProfileDTO(ProfileEntity profile) {
 		this.id = profile.getId();
 		this.fullName = profile.getFullName();
 		this.email = profile.getEmail();

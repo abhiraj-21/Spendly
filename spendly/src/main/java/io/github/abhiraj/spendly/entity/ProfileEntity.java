@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import io.github.abhiraj.spendly.dto.ProfileDto;
+import io.github.abhiraj.spendly.dto.ProfileDTO;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -56,7 +56,7 @@ public class ProfileEntity {
 		this.activationToken = activationToken;
 	}
 	
-	public ProfileEntity(ProfileDto profileDto) {
+	public ProfileEntity(ProfileDTO profileDto) {
 		this.id = profileDto.getId();
 		this.fullName = profileDto.getFullName();
 		this.email = profileDto.getEmail();
